@@ -17,30 +17,79 @@ body {
 }
 .link {
   transition: 0.2s;
-  color: #7971ea;
+  color: #eeeeee;
   text-decoration: none;
   font-size: 25px;
   font-weight: 600;
   padding-left: 75px;
 }
 .logo {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: 0.3s;
-  color: #7971ea;
+  color: #eeeeee;
   text-decoration: none;
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 20px;
   margin-top: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.logo span {
+  opacity: 0;
+  animation: appear 0.3s forwards;
+}
+
+.logo span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.logo span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.logo span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.logo span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.logo span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.logo span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.logo span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.logo span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.logo span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.logo span:nth-child(10) {
+  animation-delay: 1s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .nav-bar > .link:hover,
 .logo:hover {
-  color: #9b96ec;
+  color: #eeeeee;
   text-shadow: 0 0 2px #7971ea, 0 0 4px #7971ea, 0 0 8px #7971ea,
     0 0 15px #7971ea, 0 0 30px #7971ea;
   transition: 0.2s;
 }
 span {
-  padding-left: 60px;
   color: #eeeeee;
 }
 .game-container {
