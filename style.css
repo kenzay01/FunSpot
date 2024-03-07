@@ -11,7 +11,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
-  padding: 10px;
+  padding: 5px 10px;
 
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
@@ -19,11 +19,12 @@ body {
   transition: 0.2s;
   color: #eeeeee;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   padding-left: 75px;
 }
 .logo {
+  margin-left: 50px;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 30px;
@@ -31,7 +32,7 @@ body {
   transition: 0.3s;
   color: #eeeeee;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 800;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -100,19 +101,19 @@ span {
 }
 .game-btn {
   font-family: "Kode Mono", monospace;
-  border: 5px solid #1a2c5b;
-  padding: 30px 50px;
+  border: 7px solid #1a2c5b;
+  padding: 20px 40px;
   background-color: #eeeeee;
-  color: #7971ea;
+  color: #1a2c5b;
   text-decoration: none;
   font-weight: 900;
-  border-radius: 20px;
-  font-size: 30px;
+  /* border-radius: 20px; */
+  font-size: 50px;
   transition: 0.45s;
 }
 .box-shadow {
-  width: 200px;
-  height: 130px;
+  width: 250px;
+  height: 150px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -120,7 +121,7 @@ span {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: -1;
   border-radius: 15px;
-  filter: blur(30px);
+  filter: blur(50px);
 }
 .game-btn:hover {
   background-color: #1a2c5b;
