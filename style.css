@@ -94,8 +94,8 @@ span {
   color: #eeeeee;
 }
 .game-container {
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 29%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -114,8 +114,8 @@ span {
 .box-shadow {
   width: 250px;
   height: 150px;
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 29%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
