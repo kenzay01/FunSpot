@@ -163,3 +163,8 @@ footer > p {
   width: 40px;
   padding-bottom: 2.5px;
 }
+
+.github:hover,
+.telegram:hover {
+  filter: brightness(0.8);
+}
