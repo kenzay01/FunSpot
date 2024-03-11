@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Play Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./play-zone.css" />
@@ -13,7 +21,7 @@
   </head>
   <body>
     <div class="container">
-      <nav class="nav-bar">
+      <nav class="nav-bar play-zone">
         <a class="link" href="../index.html">Home</a>
         <h4 class="logo">
           <span><span>F</span><span>u</span><span>n</span></span
@@ -21,7 +29,70 @@
         </h4>
         <a class="link" href="../contact/contact.html">Contact</a>
       </nav>
-      <footer class="footer">
+      <div class="games-container">
+        <div class="info tic-tac-toe">
+          <button>PLAY</button>
+          <p>
+            Two players take turns marking Xs and Os on a 3x3 grid. <br />
+            Get three in a row to win!
+          </p>
+          <img src="" alt="" />
+        </div>
+
+        <div class="info word-scramble">
+          <button>PLAY</button>
+          <p>
+            Unscramble letters to form words within a time limit. <br />
+            Test your vocabulary and skills!
+          </p>
+          <img src="" alt="" />
+        </div>
+        <div class="info hangman">
+          <button>PLAY</button>
+          <p>
+            Guess letters to reveal a hidden word. Each incorrect guess adds a
+            part to the hangman. <br />
+            Solve the word before it's too late!
+          </p>
+          <img src="" alt="" />
+        </div>
+        <div class="info guess-the-word">
+          <button>PLAY</button>
+          <p>
+            Try to guess the hidden word by inputting letters. <br />
+            Each correct guess reveals part of the word. <br />
+            Can you solve it before running out of attempts?
+          </p>
+          <img src="" alt="" />
+        </div>
+        <div class="info memory-card">
+          <button>PLAY</button>
+          <p>
+            Flip cards to reveal matching pairs. Test your memory by remembering
+            card positions and finding all matches!
+          </p>
+          <img src="" alt="" />
+        </div>
+        <div class="info rock-paper-scissors">
+          <button>PLAY</button>
+          <p>
+            You need to choose between rock, paper, or scissors. Rock beats
+            scissors, scissors beat paper, and paper beats rock. <br />
+            It's a simple and fun game of strategy and luck!
+          </p>
+          <img src="" alt="" />
+        </div>
+        <div class="info more-less">
+          <button>PLAY</button>
+          <p>
+            Guess the hidden number. After each guess, you're told if your guess
+            is higher or lower than the hidden number. <br />
+            Keep guessing until you find the right one!
+          </p>
+          <img src="" alt="" />
+        </div>
+      </div>
+      <footer class="footer play-zone">
         <div class="footer-left">
           <p>&copy; 2024 FunSpot</p>
         </div>
@@ -29,13 +100,13 @@
           <a href="https://t.me/danya946"
             ><img
               class="telegram"
-              src="../icons/icons8-telegram-48.png"
+              src="../icons/icons8-телеграм-48 (1).png"
               alt="telegram"
           /></a>
           <a href="https://github.com/kenzay01"
             ><img
               class="github"
-              src="../icons/icons8-github-48.png"
+              src="../icons/icons8-github-48 (1).png"
               alt="git hub"
           /></a>
         </div>
