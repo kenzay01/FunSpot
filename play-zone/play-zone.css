@@ -1,15 +1,26 @@
 .nav-bar.play-zone {
   background-color: #eeeeee;
   box-shadow: 0 500px 1000px rgba(0, 0, 0, 0.4);
+  color: #1a2c5b;
 }
 .nav-bar.play-zone > .link {
   color: #1a2c5b;
 }
-.nav-bar.play-zone > .logo > span {
+
+.nav-bar.play-zone > .link:hover {
+  color: #1a2c5b;
+  text-shadow: 0 0 2px #618af1, 0 0 4px #618af1, 0 0 8px #618af1,
+    0 0 15px #618af1;
+}
+
+.nav-bar.play-zone > .logo span {
   color: #1a2c5b;
 }
-.nav-bar.play-zone > .logo {
+
+.nav-bar.play-zone > .logo:hover {
   color: #1a2c5b;
+  text-shadow: 0 0 2px #618af1, 0 0 4px #618af1, 0 0 8px #618af1,
+    0 0 15px #618af1;
 }
 .container {
   height: 100%;
