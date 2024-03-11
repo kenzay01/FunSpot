@@ -1,0 +1,25 @@
+.main-content {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #1a2c5b;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.main-heading {
+  text-align: center;
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px;
+  width: 40%;
+}
+.main-paragraph {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px;
+  width: 90%;
+}

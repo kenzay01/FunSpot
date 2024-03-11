@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #b8dff0;
-  height: 1000px;
 }
 .nav-bar {
   font-family: "Kode Mono", monospace;
@@ -12,7 +11,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 5px 10px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
   height: 130px;
 }
 .link {
@@ -95,9 +94,10 @@ span {
 }
 .game-container {
   position: absolute;
-  top: 25.5%;
+  top: 85.5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
 }
 .game-btn {
   font-family: "Kode Mono", monospace;
@@ -113,9 +113,9 @@ span {
 }
 .box-shadow {
   width: 250px;
-  height: 150px;
+  height: 100px;
   position: absolute;
-  top: 25.5%;
+  top: 86%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.4);
