@@ -1,3 +1,7 @@
+body {
+  height: 100%;
+  background-color: #1a2c5b;
+}
 .nav-bar.play-zone {
   background-color: #eeeeee;
   box-shadow: 0 500px 1000px rgba(0, 0, 0, 0.4);
@@ -9,8 +13,8 @@
 
 .nav-bar.play-zone > .link:hover {
   color: #1a2c5b;
-  text-shadow: 0 0 2px #618af1, 0 0 4px #618af1, 0 0 8px #618af1,
-    0 0 15px #618af1;
+  text-shadow: 0 0 2px #91adf5, 0 0 4px #91adf5, 0 0 8px #91adf5,
+    0 0 15px #91adf5, 0 0 20px #91adf5, 0 0 35px #91adf5;
 }
 
 .nav-bar.play-zone > .logo span {
@@ -19,12 +23,8 @@
 
 .nav-bar.play-zone > .logo:hover {
   color: #1a2c5b;
-  text-shadow: 0 0 2px #618af1, 0 0 4px #618af1, 0 0 8px #618af1,
-    0 0 15px #618af1;
-}
-.container {
-  height: 100%;
-  background-color: #1a2c5b;
+  text-shadow: 0 0 2px #91adf5, 0 0 4px #91adf5, 0 0 8px #91adf5,
+    0 0 15px #91adf5, 0 0 20px #91adf5, 0 0 35px #91adf5;
 }
 .games-container {
   height: 100%;
@@ -35,19 +35,35 @@
   width: 100%;
   height: 500px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px minmax(400px, 5fr);
+  grid-template-columns: 303px minmax(400px, 5fr);
   align-items: center;
   box-shadow: 0 700px 1100px rgba(0, 0, 0, 0.3);
+  margin-top: 125px;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* padding-top: 250px; */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-weight: 900;
+  color: #eeeeee;
+  padding-right: 40px;
 }
 .info > p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
   font-weight: 900;
   color: #eeeeee;
 }
-button {
+.btn {
   font-family: "Kode Mono", monospace;
   border: 5px solid #eeeeee;
   padding: 20px 40px;
@@ -57,22 +73,29 @@ button {
   font-weight: 900;
   font-size: 50px;
   transition: 0.45s;
-  width: 200px;
   margin-left: 100px;
   transition: 0.2s;
+  grid-auto-columns: 100px;
 }
-button:hover {
+.btn:hover {
   background-color: #eeeeee;
   color: #1a2c5b;
-
+  scale: 1.15;
   transition: 0.2s;
 }
 .footer.play-zone.play-zone {
   position: absolute;
-  top: 3620px;
+  top: 4600px;
   background-color: #eeeeee;
 }
 .footer.play-zone.play-zone > .footer-left,
 .footer.play-zone.play-zone > .footer-right {
   color: #1a2c5b;
+}
+.more-less {
+  padding-bottom: 100px;
+}
+.img {
+  width: 250px;
+  margin-right: 100px;
 }

@@ -28,7 +28,7 @@ body {
   padding-bottom: 14px;
   padding-left: 30px;
   padding-right: 30px;
-  transition: 0.3s;
+  transition: 0.2s;
   color: #eeeeee;
   text-decoration: none;
   font-size: 70px;
@@ -109,7 +109,7 @@ span {
   font-weight: 900;
   /* border-radius: 20px; */
   font-size: 50px;
-  transition: 0.45s;
+  transition: 0.3s;
 }
 .box-shadow {
   width: 250px;
@@ -129,7 +129,7 @@ span {
   text-shadow: 0 0 2px #7971ea, 0 0 4px #7971ea, 0 0 8px #7971ea,
     0 0 15px #7971ea, 0 0 30px #7971ea;
   border: 4px solid #eeeeee;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 footer {
   font-family: "Kode Mono", monospace;
