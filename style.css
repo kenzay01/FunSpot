@@ -85,8 +85,7 @@ body {
 .nav-bar > .link:hover,
 .logo:hover {
   color: #eeeeee;
-  text-shadow: 0 0 2px #7971ea, 0 0 4px #7971ea, 0 0 8px #7971ea,
-    0 0 15px #7971ea, 0 0 30px #7971ea;
+  text-shadow: 0 0 4px #eeeeee, 0 0 8px #eeeeee, 0 0 12px #eeeeee;
   transition: 0.2s;
 }
 span {
@@ -126,8 +125,7 @@ span {
 .game-btn:hover {
   background-color: #1a2c5b;
   color: #eeeeee;
-  text-shadow: 0 0 2px #7971ea, 0 0 4px #7971ea, 0 0 8px #7971ea,
-    0 0 15px #7971ea, 0 0 30px #7971ea;
+  text-shadow: 0 0 2px #eeeeee, 0 0 4px #eeeeee, 0 0 12px #eeeeee;
   border: 4px solid #eeeeee;
   transition: 0.2s;
 }
