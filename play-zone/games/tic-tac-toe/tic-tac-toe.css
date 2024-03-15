@@ -162,3 +162,30 @@ body {
   color: #eeeeee;
   cursor: pointer;
 }
+
+.lobby a {
+  font-family: "Kode Mono", monospace;
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1a2c5b;
+  position: absolute;
+  left: 10%;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: #000000 0px 7px 0px 0px;
+}
+.lobby a:active {
+  top: 9%;
+  box-shadow: #eeeeee 0px 0px 0px 0px;
+  /* transform: translateY(5px); */
+  transition: 0.1s;
+}
