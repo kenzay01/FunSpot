@@ -3,7 +3,7 @@ body {
   background-color: #1a2c5b;
 }
 .nav-bar.play-zone {
-  background-color: #eeeeee;
+  background-color: #f7f6f1;
   box-shadow: 0 500px 1000px rgba(0, 0, 0, 0.4);
   color: #1a2c5b;
 }
@@ -54,7 +54,7 @@ body {
   font-size: 75px;
   font-weight: 900;
   color: #eeeeee;
-  padding-right: 50px;
+  /* padding-right: 20px; */
 }
 .info > p {
   font-family: "Josefin Sans", sans-serif;
@@ -63,28 +63,31 @@ body {
   text-align: center;
   font-weight: 900;
   color: #eeeeee;
-  padding-left: 65px;
+  padding-left: 125px;
 }
 .btn-play-zone {
   font-family: "Kode Mono", monospace;
-  border: 5px solid #eeeeee;
-  padding: 20px 40px;
-  background-color: #1a2c5b;
-  color: #eeeeee;
+  border: 0;
+  border-radius: 10px;
+  padding: 30px 50px;
+  letter-spacing: 1.5px;
+  background-color: #eeeeee;
+  color: #1a2c5b;
+  transition: all 0.3s ease;
   text-decoration: none;
+  box-shadow: #5a5a5a 0px 10px 0px 0px;
   font-weight: 900;
   font-size: 50px;
   transition: 0.45s;
   margin-left: 100px;
-  transition: 0.2s;
+  cursor: pointer;
   grid-auto-columns: 100px;
   margin-right: 150px;
 }
-.btn-play-zone:hover {
-  background-color: #eeeeee;
-  color: #1a2c5b;
-  scale: 1.15;
-  transition: 0.2s;
+.btn-play-zone:active {
+  box-shadow: #eeeeee 0px 5px 0px 0px;
+  transform: translateY(7px);
+  transition: 0.1s;
 }
 .footer.play-zone.play-zone {
   position: absolute;
