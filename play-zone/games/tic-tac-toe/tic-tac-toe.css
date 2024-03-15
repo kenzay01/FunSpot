@@ -9,9 +9,19 @@ body {
   background-color: #1a2c5b;
 }
 
+.box-shadow {
+  width: 500px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  border-radius: 15px;
+  filter: blur(125px);
+}
+
 .select-box,
 .player-board,
-.result-box {
+.result-box,
+.box-shadow {
   position: absolute;
   top: 50%;
   left: 50%;
