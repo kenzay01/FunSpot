@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Patua One", serif;
+  font-family: "Lexend", sans-serif;
   /* font-weight: 400; */
 }
 body {
@@ -143,7 +143,7 @@ body {
   background: #eeeeee;
   padding: 20px;
   border-radius: 7px;
-  max-width: 380px;
+  max-width: 390px;
   width: 100%;
   display: none;
 }
