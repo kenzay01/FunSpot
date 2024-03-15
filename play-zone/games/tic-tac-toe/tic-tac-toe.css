@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Patua One", serif;
+  /* font-weight: 400; */
+}
+body {
+  background-color: #1a2c5b;
+}
+
+.select-box,
+.player-board,
+.result-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.select-box {
+  background-color: #eeeeee;
+  padding: 20px 25px 25px;
+  border-radius: 7px;
+  max-width: 330px;
+  width: 100%;
+  /* display: none; */
+}
+.select-box header {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.select-box .title {
+  font-size: 20px;
+  font-weight: 500;
+  /* padding-bottom: 10px; */
+  margin: 20px 0;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* padding: 5px; */
+}
+.options button {
+  width: 100%;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  background-color: #1a2c5b;
+  border-radius: 7px;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+.playerX {
+  margin-right: 5px;
+}
+.playerO {
+  margin-left: 5px;
+}
+.options button:hover,
+.btn button:hover {
+  background-color: #eeeeee;
+  color: #1a2c5b;
+  /* border: #1a2c5b 1px solid; */
+  transition: all 0.3s ease;
+}
+
+.player-board {
+  display: none;
+}
+
+.player-board .details {
+  background: #eeeeee;
+  padding: 7px;
+  border-radius: 7px;
+}
+.player-board section span {
+  display: block;
+  margin: 3px;
+  height: 80px;
+  width: 80px;
+  background: #eeeeee;
+  border-radius: 7px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 80px;
+  color: #1a2c5b;
+}
+.player-board section {
+  display: flex;
+}
+.player-area {
+  margin-top: 15px;
+}
+.players {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.details span {
+  color: #1a2c5b;
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px 0;
+  font-size: 19px;
+  cursor: default;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.details span:first-child {
+  color: #eeeeee;
+}
+.details .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #1a2c5b;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.result-box {
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 7px;
+  max-width: 380px;
+  width: 100%;
+  display: none;
+}
+.won-text {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.won-text p {
+  font-weight: 600;
+  margin: 0 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn button {
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  background-color: #1a2c5b;
+  border-radius: 7px;
+  color: #eeeeee;
+  cursor: pointer;
+}
