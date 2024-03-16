@@ -70,12 +70,11 @@ body {
   letter-spacing: 1.5px;
   background-color: #eeeeee;
   color: #1a2c5b;
-  transition: all 0.3s ease;
   text-decoration: none;
   box-shadow: #000000 0px 10px 0px 0px;
   font-weight: 900;
   font-size: 30px;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   text-align: center;
 }
@@ -142,5 +141,5 @@ body {
 
 .info:hover {
   transition: all 0.2s ease;
-  box-shadow: 0 0 400px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 1000px rgba(255, 255, 255, 0.2);
 }
