@@ -174,14 +174,14 @@ body {
 }
 
 .lobby a {
+  left: 10%;
+  top: 8%;
   font-family: "Kode Mono", monospace;
   font-weight: 800;
   font-size: 20px;
   text-decoration: none;
   color: #1a2c5b;
   position: absolute;
-  left: 10%;
-  top: 8%;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
   border-radius: 7px;
@@ -198,4 +198,7 @@ body {
   box-shadow: #eeeeee 0px 0px 0px 0px;
   /* transform: translateY(5px); */
   transition: 0.1s;
+}
+.lobby a:hover {
+  background-color: #cacaca;
 }

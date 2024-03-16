@@ -59,6 +59,7 @@ body {
   margin-bottom: 10px;
   border-bottom: #1a2c5b 5px solid;
   padding-bottom: 6px;
+  cursor: default;
 }
 
 .btn-play-zone {

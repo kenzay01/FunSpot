@@ -36,6 +36,7 @@ body {
   margin-top: 20px;
   overflow: hidden;
   white-space: nowrap;
+  cursor: default;
 }
 .logo span {
   opacity: 0;
@@ -90,30 +91,35 @@ body {
 span {
   color: #eeeeee;
 }
-.btn-container {
+
+.game-btn {
+  font-family: "Kode Mono", monospace;
   position: absolute;
   top: 85.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
-}
-.game-btn {
-  font-family: "Kode Mono", monospace;
-  border: 5px solid #1a2c5b;
-  padding: 20px 40px;
-  background-color: #eeeeee;
-  color: #1a2c5b;
-  text-decoration: none;
-  font-weight: 900;
-  /* border-radius: 20px; */
+  font-weight: 800;
   font-size: 50px;
-  transition: 0.3s;
+  text-decoration: none;
+  color: #eeeeee;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 25px 45px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2c5b;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: #eeeeee 0px 10px 0px 0px;
 }
 .box-shadow {
   width: 250px;
   height: 100px;
   position: absolute;
-  top: 86%;
+  top: 87%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.4);
@@ -122,11 +128,12 @@ span {
   filter: blur(50px);
 }
 .game-btn:hover {
-  background-color: #1a2c5b;
-  color: #eeeeee;
-  text-shadow: 0 0 2px #eeeeee, 0 0 4px #eeeeee, 0 0 12px #eeeeee;
-  border: 4px solid #eeeeee;
-  transition: 0.2s;
+  background-color: #273e7d;
+}
+.game-btn:active {
+  box-shadow: #273e7d 0px 0px 0px 0px;
+  transition: all 0.1s ease;
+  top: 86.5%;
 }
 footer {
   font-family: "Kode Mono", monospace;
@@ -168,4 +175,32 @@ footer > p {
 
 .hidden {
   display: none;
+}
+.main-content {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #1a2c5b;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  cursor: default;
+}
+.main-heading {
+  text-align: center;
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px;
+  width: 40%;
+  cursor: default;
+}
+.main-paragraph {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px;
+  width: 90%;
+  cursor: default;
 }
