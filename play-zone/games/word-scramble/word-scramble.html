@@ -4,10 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Word Scramble</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Madimi+One&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./word-scramble.css" />
-    <script src="./word-scramble.js"></script>
+    <script src="./js/words.js" defer></script>
+    <script src="./js/word-scramble.js" defer></script>
   </head>
   <body>
-    <h1>Word Scramble</h1>
+    <div class="lobby">
+      <a href="../../play-zone.html">Back to Lobby</a>
+    </div>
+    <div class="container">
+      <h2>Word Scramble</h2>
+      <div class="content">
+        <div class="word-container">
+          <p class="corOrWrng"></p>
+          <p class="word">Press Start!</p>
+        </div>
+        <div class="details">
+          <p class="hint">Hint: <span class="hint-text"></span></p>
+          <p class="time">Time Left <span><b>30</b>s</span></p>
+        </div>
+        <input type="text" placeholder="Let's go!">
+        <div class="buttons">
+          <button class="refresh-word">Start!</button>
+          <button class="check-word">Check Word</button>
+        </div>
+      </div>
+    </div>
+    <div class="box-shadow"></div>
   </body>
 </html>
