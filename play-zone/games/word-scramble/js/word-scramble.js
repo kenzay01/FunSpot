@@ -58,7 +58,6 @@ const initGame = () => {
   wordHint.textContent = randomObj.hint;
   inputWord.value = "";
   inputWord.setAttribute("maxlength", correctWord.length);
-  console.log(randomObj.word);
 };
 const correctOrWrong = (text, color) => {
   if (text === "Congratulations!") {
