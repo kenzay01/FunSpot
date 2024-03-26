@@ -4,10 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Madimi+One&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./memory-card.css" />
-    <script src="./memory-card.js"></script>
+    <script src="./memory-card.js" defer></script>
   </head>
   <body>
-    <h1>Memory Card</h1>
+    <div class="lobby">
+      <a href="../../play-zone.html">Back to Lobby</a>
+    </div>
+    <div class="wrapper">
+      <h2>Memory Card Game</h2>
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-1.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-2.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-3.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-4.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-5.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-6.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-1.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-2.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-3.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-4.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-5.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <span class="icons">?</span>
+          </div>
+          <div class="view back-view">
+            <img src="./icons/img-6.png" alt="card-img" />
+          </div>
+        </li>
+      </ul>
+      <div class="details">
+        <div class="start-btn">Start</div>
+        <div class="timer">
+          Time: <span><b>20</b>s</span>
+        </div>
+        <div class="score">Flips: <span>0</span></div>
+        <button class="refresh">Refresh</button>
+      </div>
+    </div>
+    <div class="box-shadow"></div>
   </body>
 </html>
