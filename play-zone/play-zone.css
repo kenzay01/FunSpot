@@ -143,3 +143,49 @@ body {
   transition: all 0.2s ease;
   box-shadow: 0 0 1000px rgba(255, 255, 255, 0.2);
 }
+.module {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  background-color: #eeeeee;
+  z-index: 50;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+.module-shadow {
+  position: absolute;
+  width: 100%;
+  height: 155%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 49;
+}
+.close-module {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  font-size: 50px;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.info-game {
+  position: relative;
+  left: 10%;
+  top: 15%;
+  font-size: 30px;
+}
+.info-game-name {
+  position: relative;
+  left: 50%;
+  top: 10%;
+  transform: translate(-5%, -50%);
+  font-size: 40px;
+}
+
+.hidden {
+  display: none;
+}
