@@ -2,14 +2,11 @@ const moduleWindow = document.querySelector(".module");
 const overlay = document.querySelector(".overlay");
 const gameContainers = document.querySelectorAll(".info");
 const closeModule = moduleWindow.querySelector(".close-module");
-const gameName = moduleWindow.querySelector(".info-game-name");
-const gameInfo = moduleWindow.querySelector(".info-game");
 
 //Open Module
 const openModuleFunction = function () {
   const gameName = this.querySelector(".name").innerText;
   const gameInfo = this.querySelector(".name").getAttribute("data-info");
-  console.log(gameInfo);
 
   const gameNameElement = moduleWindow.querySelector(".info-game-name");
   const gameInfoElement = moduleWindow.querySelector(".info-game");
@@ -42,7 +39,6 @@ const closeModuleFunction = function () {
 };
 
 document.addEventListener("keydown", (e) => {
-  console.log(e.key);
   if (e.key === "Escape" || e.key === "Enter") {
     if (!moduleWindow.classList.contains("hidden")) {
       closeModuleFunction();
