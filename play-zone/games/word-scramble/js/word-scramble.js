@@ -11,6 +11,8 @@ const timeInterval = document.querySelector(".time b");
 const cw = document.querySelector(".corOrWrng");
 let correctWord, timer;
 let cond = true;
+
+//Timer
 const initTimer = (maxTime, cond) => {
   clearInterval(timer);
   if (cond) {
@@ -31,6 +33,7 @@ const initTimer = (maxTime, cond) => {
   }
 };
 
+//Game
 const initGame = () => {
   cond = true;
   initTimer(30, cond);
@@ -59,6 +62,8 @@ const initGame = () => {
   inputWord.value = "";
   inputWord.setAttribute("maxlength", correctWord.length);
 };
+
+//Checker
 const correctOrWrong = (text, color) => {
   if (text === "Congratulations!") {
     cw.style.fontSize = "35px";
@@ -86,6 +91,10 @@ const checkWord = () => {
   checkBtn.style.pointerEvents = "none";
   inputWord.style.pointerEvents = "none";
 };
-// initGame();
+
+//Event Listeners
 refreshBtn.addEventListener("click", initGame);
 checkBtn.addEventListener("click", checkWord);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") checkWord();
+});
