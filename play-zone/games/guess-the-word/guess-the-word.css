@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+body {
+  background-color: #1a2c5b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1em;
+  font-size: clamp(0.5rem, 2.5vmin, 1.5rem);
+}
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(auto, 1.25em));
+  grid-auto-rows: 3em;
+  gap: 0.25em;
+  justify-content: center;
+}
+.key {
+  font-size: inherit;
+  grid-column: span 2;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8b8888;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+  cursor: pointer;
+  user-select: none;
+  color: #eeeeee;
+  fill: #eeeeee;
+}
+.key.large {
+  grid-column: span 3;
+}
+.key > svg {
+  width: 1.75em;
+  height: 1.75em;
+}
+.key:hover {
+  background-color: #989898;
+}
+.key.wrong {
+  background-color: #c43030;
+}
+.key.wrong-location {
+  background-color: #caad2a;
+}
+.key.correct {
+  background-color: #2ca32c;
+}
+
+.guess-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+  grid-template-columns: repeat(5, 4em);
+  grid-template-rows: repeat(6, 4em);
+  gap: 0.25em;
+  margin-bottom: 1em;
+}
+.tile {
+  font-size: 2em;
+  color: #eeeeee;
+  border: 0.05em solid #989898;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: transform 250ms linear;
+}
+.tile[data-state="active"] {
+  border-color: #e3e3e3;
+}
+.tile[data-state="wrong"] {
+  border: none;
+  background-color: #c43030;
+}
+.tile[data-state="wrong-location"] {
+  border: none;
+  background-color: #caad2a;
+}
+.tile[data-state="correct"] {
+  border: none;
+  background-color: #2ca32c;
+}
+.tile.shake {
+  animation: shake 250ms ease-in-out;
+}
+.tile.dance {
+  animation: dance 500ms ease-in-out;
+}
+.tile.flip {
+  transform: rotateX(90deg);
+}
+@keyframes shake {
+  10% {
+    transform: translateX(-5%);
+  }
+  30% {
+    transform: translateX(5%);
+  }
+  50% {
+    transform: translateX(-7.5%);
+  }
+  70% {
+    transform: translateX(7.5%);
+  }
+  90% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes dance {
+  20% {
+    transform: translateY(-50%);
+  }
+  40% {
+    transform: translateY(5%);
+  }
+  60% {
+    transform: translateY(-25%);
+  }
+  80% {
+    transform: translateY(2.5%);
+  }
+  90% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.alert-container {
+  position: fixed;
+  top: 10vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alert {
+  pointer-events: none;
+  background-color: #e3e3e3;
+  padding: 0.75em;
+  border-radius: 0.25em;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+  margin-bottom: 0.5em;
+}
+.alert:last-child {
+  margin-bottom: 0;
+}
+.alert.hidden {
+  opacity: 0;
+}
+.box-shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  width: 700px;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  border-radius: 15px;
+  filter: blur(150px);
+}
+.lobby a {
+  left: 10%;
+  top: 8%;
+  font-family: "Kode Mono", monospace;
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1a2c5b;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: #000000 0px 7px 0px 0px;
+}
+.lobby a:active {
+  top: 9%;
+  box-shadow: #eeeeee 0px 0px 0px 0px;
+  transition: 0.1s;
+}
+.lobby a:hover {
+  background-color: #cacaca;
+}
+.restart {
+  opacity: 0;
+  position: absolute;
+  right: 4%;
+  bottom: 6%;
+  font-family: "Kode Mono", monospace;
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1a2c5b;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: #000000 0px 7px 0px 0px;
+}
+.restart:hover {
+  background-color: #cacaca;
+}
+.restart:active {
+  bottom: 5%;
+  box-shadow: #eeeeee 0px 0px 0px 0px;
+  transition: 0.1s;
+}
