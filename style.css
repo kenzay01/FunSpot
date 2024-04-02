@@ -271,6 +271,7 @@ footer > p {
   .main-paragraph {
     font-size: 30px;
     width: 90%;
+    padding-top: 30px;
   }
   .game-btn {
     font-size: 40px;
