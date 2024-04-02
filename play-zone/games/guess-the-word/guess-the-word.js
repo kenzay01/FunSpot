@@ -1,12 +1,11 @@
 const WORD_LENGTH = 5;
 const FLIP_ANIMATION_DURATION = 500;
-const guessGrid = document.querySelector("[data-guess-grid]");
-const keyboard = document.querySelector("[data-keyboard]");
-const btnRestart = document.querySelector("[data-restart]");
+const guessGrid = document.querySelector(".guess-grid");
+const keyboard = document.querySelector(".keyboard");
+const btnRestart = document.querySelector(".restart");
 const DANCE_ANIMATION_DURACTION = 500;
 let targetWord = targetWords[Math.floor(Math.random() * targetWords.length)];
-console.log(targetWord);
-const alertContainer = document.querySelector("[data-alert-container]");
+const alertContainer = document.querySelector(".alert-container");
 startInteraction();
 
 function startInteraction() {
