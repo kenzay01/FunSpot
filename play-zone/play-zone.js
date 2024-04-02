@@ -5,6 +5,7 @@ const closeModule = moduleWindow.querySelector(".close-module");
 
 //Open Module
 const openModuleFunction = function () {
+  document.body.style.overflow = "hidden";
   const gameName = this.querySelector(".name").innerText;
   const gameInfo = this.querySelector(".name").getAttribute("data-info");
 
@@ -34,6 +35,7 @@ gameContainers.forEach((container) => {
 
 //Close Module
 const closeModuleFunction = function () {
+  document.body.style.overflow = "";
   moduleWindow.classList.add("hidden");
   overlay.classList.add("hidden");
 };
