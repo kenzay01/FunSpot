@@ -4,10 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Madimi+One&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./rock-paper-scissors.css" />
-    <script src="./rock-paper-scissors.js"></script>
+    <script src="./rock-paper-scissors.js" defer></script>
   </head>
   <body>
-    <h1>Rock Paper Scissors</h1>
+    <div class="lobby">
+      <a href="../../play-zone.html">Back to Lobby</a>
+    </div>
+    <div class="container">
+      <h2>Rock Paper Scissors</h2>
+      <div class="result-field">
+        <div class="result-images">
+          <span class="user-result">
+            <img src="./icons-for-rps/rock.png" alt="">
+          </span>
+          <span class="bot-result">
+            <img src="./icons-for-rps/rock.png" alt="">
+          </span>
+        </div>
+        <div class="result">Let's Play!</div>
+      </div>
+      <div class="option-images">
+        <span class="option-image">
+          <img src="./icons-for-rps/rock.png" alt="">
+          <p>Rock</p>
+        </span>
+        <span class="option-image">
+          <img src="./icons-for-rps/paper.png" alt="">
+          <p>Paper</p>
+        </span>
+        <span class="option-image">
+          <img src="./icons-for-rps/scissors.png" alt="">
+          <p>Scissors</p>
+        </span>
+      </div>
+    </div>
+    <div class="box-shadow"></div>
   </body>
 </html>
