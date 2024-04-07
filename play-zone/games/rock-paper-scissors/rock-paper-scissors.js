@@ -6,6 +6,7 @@ const optionImages = document.querySelectorAll(".option-image");
 
 optionImages.forEach((image, index) => {
   image.addEventListener("click", (e) => {
+    result.style.color = "#eeeeee";
     image.classList.add("active");
     userResult.src = botResult.src = "./icons-for-rps/rock.png";
     result.textContent = "Wait...";
@@ -40,6 +41,12 @@ optionImages.forEach((image, index) => {
         SP: "You win",
       };
       let outComeValue = outcomes[userValues + cpuValues];
+      outComeValue === "You win"
+        ? (result.style.color = "rgb(26, 177, 26)")
+        : outComeValue === "You lose"
+        ? (result.style.color = "rgb(191, 22, 22)")
+        : (result.style.color = "#eeeeee");
+
       result.textContent = outComeValue;
     }, 1450);
   });
