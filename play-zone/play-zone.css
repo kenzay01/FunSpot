@@ -109,6 +109,9 @@ body {
 .tic-tac-toe {
   grid-column: 1 / span 2;
 }
+.word-scramble img {
+  width: 120%;
+}
 .word-scramble {
   grid-column: 3 / span 2;
 }
@@ -117,6 +120,9 @@ body {
 }
 .guess-the-word {
   grid-column: 7 / span 2;
+}
+.guess-the-word img {
+  width: 70%;
 }
 .memory-card {
   grid-column: 2 / span 2;
