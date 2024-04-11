@@ -8,9 +8,15 @@ const openModuleFunction = function () {
   document.body.style.overflow = "hidden";
   const gameName = this.querySelector(".name").innerText;
   const gameInfo = this.querySelector(".name").getAttribute("data-info");
+  const gameGifName = this.querySelector(".name").getAttribute("data-gif-name");
 
+  const gameGif = moduleWindow.querySelector(".gif");
   const gameNameElement = moduleWindow.querySelector(".info-game-name");
   const gameInfoElement = moduleWindow.querySelector(".info-game");
+
+  gameGif.src = ""; // встановлюємо src в порожній рядок
+  gameGif.src = `./gifs/${gameGifName}.gif`; // встановлюємо src знову, щоб спрацювати заново
+  gameGif.currentTime = 0; // Скидання часової позиції до початку
 
   gameNameElement.innerText = gameName;
   gameInfoElement.innerText = gameInfo;
