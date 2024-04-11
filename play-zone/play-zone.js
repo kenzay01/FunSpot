@@ -14,9 +14,9 @@ const openModuleFunction = function () {
   const gameNameElement = moduleWindow.querySelector(".info-game-name");
   const gameInfoElement = moduleWindow.querySelector(".info-game");
 
-  gameGif.src = ""; // встановлюємо src в порожній рядок
-  gameGif.src = `./gifs/${gameGifName}.gif`; // встановлюємо src знову, щоб спрацювати заново
-  gameGif.currentTime = 0; // Скидання часової позиції до початку
+  gameGif.src = "";
+  gameGif.src = `./gifs/${gameGifName}.gif`;
+  gameGif.currentTime = 0;
 
   gameNameElement.innerText = gameName;
   gameInfoElement.innerText = gameInfo;
