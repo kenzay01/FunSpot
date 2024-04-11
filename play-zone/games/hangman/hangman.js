@@ -13,7 +13,6 @@ const maxGuesses = 6;
 let correctLetters = [];
 const getRandomWord = function () {
   const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
-  console.log(word);
   currentWord = word;
   wordHint.innerHTML = hint;
   wordDisplay.innerHTML = word
