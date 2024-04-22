@@ -94,7 +94,7 @@ span {
 
 .game-btn {
   font-family: "Kode Mono", monospace;
-  position: absolute;
+  position: fixed;
   top: 85.5%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -103,8 +103,6 @@ span {
   font-size: 50px;
   text-decoration: none;
   color: #eeeeee;
-  position: absolute;
-  transform: translate(-50%, -50%);
   padding: 25px 45px;
   border-radius: 7px;
   display: flex;
@@ -235,7 +233,7 @@ footer > p {
   }
   .main-paragraph {
     padding-top: 25px;
-    font-size: 30px;
+    font-size: 25px;
     width: 90%;
   }
   .game-btn {
