@@ -165,9 +165,42 @@ body {
 .lobby a:active {
   top: 9%;
   box-shadow: #eeeeee 0px 0px 0px 0px;
-  /* transform: translateY(5px); */
   transition: 0.1s;
 }
 .lobby a:hover {
   background-color: #cacaca;
+}
+@media (max-width: 782px) {
+  body {
+    padding: 0 15px;
+  }
+  .lobby a {
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+  }
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+  .container h2 {
+    font-size: 30px;
+    padding: 0;
+  }
+  .result-images {
+    column-gap: 0px;
+  }
+  .result-images img {
+    width: 175px;
+  }
+  .result {
+    font-size: 25px;
+  }
+  .option-image img {
+    width: 115px;
+  }
+  .box-shadow {
+    width: 100%;
+    height: 100%;
+  }
 }

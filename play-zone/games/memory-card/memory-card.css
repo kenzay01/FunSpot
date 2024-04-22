@@ -16,6 +16,7 @@ body {
   border-bottom: 2px solid #ccc;
 }
 .details {
+  position: relative;
   margin: 20px 0 20px;
   display: flex;
   justify-content: space-evenly;
@@ -52,6 +53,7 @@ body {
   transition: all 0.3s ease;
 }
 .wrapper {
+  position: relative;
   padding: 25px;
   border-radius: 10px;
   background-color: #eeeeee;
@@ -129,10 +131,10 @@ body {
 }
 .start-btn {
   position: absolute;
-  bottom: 14.9%;
+  bottom: 0%;
   font-weight: 600;
   width: 350px;
-  height: 70px;
+  height: 72px;
   text-align: center;
   font-size: 30px;
   transition: all 0.3s ease;
@@ -143,6 +145,8 @@ body {
   background-color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  left: 50%; /* Змініть це, щоб центрувати кнопку */
+  transform: translateX(-50%); /* Це центрує кнопку горизонтально */
 }
 .start-btn:hover {
   background-color: #1a2c5b;
@@ -193,4 +197,11 @@ body {
 }
 .lobby a:hover {
   background-color: #cacaca;
+}
+@media (max-width: 782px) {
+  .lobby a {
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+  }
 }
