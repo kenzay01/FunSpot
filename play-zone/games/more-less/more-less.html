@@ -4,10 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More & Less</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Madimi+One&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./more-less.css" />
-    <script src="./more-less.js"></script>
+    <script src="./more-less.js" defer></script>
   </head>
   <body>
-    <h1>More & Less</h1>
+    <div class="lobby">
+      <a href="../../play-zone.html">Back to Lobby</a>
+    </div>
+    <div class="alert-container"></div>
+    <div class="container">
+      <h2>More & Less</h2>
+      <div class="difficult">
+        <button class="btn" data-difficult="easy">Easy</button>
+        <button class="btn" data-difficult="medium">Medium</button>
+        <button class="btn" data-difficult="hard">Hard</button>
+      </div>
+      <div class="container-result">
+        <div class="result">?</div>
+        <h3>Choose a difficulty!</h3>
+        <input type="number" name="number" id="input" placeholder="Different number">
+      </div>
+      <div class="info">
+        <p>
+          Enter a number between <b>1</b> and <b><span>?</span></b>
+        </p>
+        <p class="attemps">Attemps: <b>😇</b></p>
+      </div>
+      <div class="container-btn">
+        <button class="play">Roll</button>
+      </div>
+    </div>
+    <div class="box-shadow"></div>
   </body>
 </html>
