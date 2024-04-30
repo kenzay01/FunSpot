@@ -10,7 +10,6 @@ body {
   height: 100vh;
   margin: 0;
   padding: 1em;
-  font-size: clamp(0.5rem, 2.5vmin, 1.5rem);
 }
 .keyboard {
   display: grid;
@@ -27,19 +26,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8b8888;
+  background-color: #eeeeee;
   text-transform: uppercase;
   border-radius: 0.25em;
   cursor: pointer;
-  user-select: none;
-  color: #eeeeee;
-  fill: #eeeeee;
+  color: #1a2c5b;
 }
 .key.large {
   grid-column: span 3;
 }
 .key:hover {
-  background-color: #989898;
+  background-color: #c3c3c3;
 }
 .key.wrong {
   background-color: #c43030;

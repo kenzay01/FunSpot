@@ -1,6 +1,7 @@
 const keyboard = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".word-display");
 const wordHint = document.querySelector(".hint-text b");
+const conHint = document.querySelector(".hint-text");
 const guessesText = document.querySelector(".guesses-text b");
 const hangmanImage = document.querySelector(".hangman-box img");
 const gameModal = document.querySelector(".game-modal");
@@ -67,7 +68,9 @@ const gameOver = function (win) {
     overlay.classList.add("show");
   }, 300);
 };
-
+conHint.addEventListener("click", () => {
+  wordHint.classList.toggle("blurred-text");
+});
 getRandomWord();
 playAgainBtn.addEventListener("click", () => {
   window.location.reload();

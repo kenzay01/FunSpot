@@ -72,6 +72,7 @@ buttonsDifficulty.forEach((button) => {
       default:
         break;
     }
+    inputNumber.focus();
     secretNumber = Math.floor(Math.random() * max) + min;
   });
 });

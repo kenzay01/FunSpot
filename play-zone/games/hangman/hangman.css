@@ -144,6 +144,9 @@ body {
 .keyboard button.wrong-guesses {
   background-color: #c43030;
 }
+.hint-text {
+  user-select: none;
+}
 .lobby a {
   left: 10%;
   top: 8%;
@@ -185,6 +188,10 @@ body {
   z-index: -1;
   border-radius: 15px;
   filter: blur(150px);
+}
+.blurred-text {
+  filter: blur(5px);
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 782px) {
