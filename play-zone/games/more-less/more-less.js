@@ -34,6 +34,8 @@ const gamePlay = function () {
     displayMessage("Correct Number!");
     result.textContent = secretNumber;
   }
+  inputNumber.value = "";
+  inputNumber.focus();
 };
 
 buttonsDifficulty.forEach((button) => {
