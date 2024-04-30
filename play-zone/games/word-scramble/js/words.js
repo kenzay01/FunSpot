@@ -1,9 +1,5 @@
 let words = [
   {
-    word: "addition",
-    hint: "The process of adding numbers",
-  },
-  {
     word: "meeting",
     hint: "Event in which people come together",
   },
@@ -12,48 +8,16 @@ let words = [
     hint: "Math symbol used for counting",
   },
   {
-    word: "exchange",
-    hint: "The act of trading",
-  },
-  {
     word: "canvas",
     hint: "Piece of fabric for oil painting",
   },
   {
     word: "garden",
-    hint: "Space for planting flower and plant",
-  },
-  {
-    word: "position",
-    hint: "Location of someone or something",
-  },
-  {
-    word: "feather",
-    hint: "Hair like outer covering of bird",
-  },
-  {
-    word: "comfort",
-    hint: "A pleasant feeling of relaxation",
-  },
-  {
-    word: "tongue",
-    hint: "The muscular organ of mouth",
-  },
-  {
-    word: "expansion",
-    hint: "The process of increase or grow",
-  },
-  {
-    word: "country",
-    hint: "A politically identified region",
+    hint: "Space for planting flowers and plants",
   },
   {
     word: "group",
     hint: "A number of objects or persons",
-  },
-  {
-    word: "taste",
-    hint: "Ability of tongue to detect flavour",
   },
   {
     word: "store",
@@ -80,80 +44,16 @@ let words = [
     hint: "Person with extensive knowledge",
   },
   {
-    word: "statement",
-    hint: "A declaration of something",
-  },
-  {
     word: "second",
     hint: "One-sixtieth of a minute",
   },
   {
     word: "library",
-    hint: "Place containing collection of books",
+    hint: "Place containing a collection of books",
   },
   {
     word: "bicycle",
     hint: "Two-wheeled vehicle with pedals",
-  },
-  {
-    word: "umbrella",
-    hint: "Rain or sun protection device",
-  },
-  {
-    word: "keyboard",
-    hint: "Typing device with keys",
-  },
-  {
-    word: "guitar",
-    hint: "Musical instrument with strings",
-  },
-  {
-    word: "candle",
-    hint: "Wax block with central wick",
-  },
-  {
-    word: "pillow",
-    hint: "Head support for sleeping",
-  },
-  {
-    word: "camera",
-    hint: "Picture-taking device",
-  },
-  {
-    word: "shoes",
-    hint: "Footwear for protection",
-  },
-  {
-    word: "coffee",
-    hint: "Morning energizing drink",
-  },
-  {
-    word: "bag",
-    hint: "Carrying container",
-  },
-  {
-    word: "chair",
-    hint: "Seating furniture",
-  },
-  {
-    word: "window",
-    hint: "Glass opening in walls",
-  },
-  {
-    word: "mirror",
-    hint: "Reflective surface for seeing oneself",
-  },
-  {
-    word: "wallet",
-    hint: "Money and card holder",
-  },
-  {
-    word: "book",
-    hint: "Reading material with pages",
-  },
-  {
-    word: "garden",
-    hint: "Outdoor plant area",
   },
   {
     word: "lamp",
@@ -168,100 +68,139 @@ let words = [
     hint: "Headwear for sun or style",
   },
   {
-    word: "journey",
-    hint: "The act of traveling from one place to another",
-  },
-  {
-    word: "ocean",
-    hint: "A vast body of saltwater",
-  },
-  {
-    word: "adventure",
-    hint: "An exciting or daring experience",
-  },
-  {
-    word: "mystery",
-    hint: "Something that is difficult to understand or explain",
-  },
-  {
-    word: "whisper",
-    hint: "Speaking very softly or quietly",
-  },
-  {
-    word: "rainbow",
-    hint: "A multicolored arc in the sky",
-  },
-  {
-    word: "breeze",
-    hint: "A gentle wind",
-  },
-  {
-    word: "treasure",
-    hint: "Valuable items or riches",
-  },
-  {
     word: "dream",
     hint: "A series of thoughts, images, or emotions occurring during sleep",
-  },
-  {
-    word: "silence",
-    hint: "The absence of sound or noise",
   },
   {
     word: "magic",
     hint: "The power of apparently influencing events by using mysterious or supernatural forces",
   },
   {
-    word: "forest",
-    hint: "A large area covered chiefly with trees and undergrowth",
-  },
-  {
     word: "sparkle",
     hint: "Shine brightly with flashes of light",
-  },
-  {
-    word: "bravery",
-    hint: "Courageous behavior or character",
   },
   {
     word: "echo",
     hint: "A sound or series of sounds caused by the reflection of sound waves from a surface back to the listener",
   },
   {
-    word: "serenity",
-    hint: "The state of being calm, peaceful, and untroubled",
-  },
-  {
-    word: "wisdom",
-    hint: "The quality of having experience, knowledge, and good judgment; the quality of being wise",
-  },
-  {
-    word: "victory",
-    hint: "An act of defeating an enemy or opponent in a battle, game, or other competition",
-  },
-  {
     word: "muse",
     hint: "A person or personified force who is the source of inspiration for a creative artist",
   },
   {
-    word: "laughter",
-    hint: "The action or sound of laughing",
+    word: "ocean",
+    hint: "A vast body of saltwater",
   },
   {
-    word: "adventure",
-    hint: "An unusual and exciting or daring experience",
-  },
-
-  {
-    word: "journey",
-    hint: "An act of traveling from one place to another",
+    word: "brave",
+    hint: "Ready to face and endure danger or pain",
   },
   {
-    word: "discovery",
-    hint: "The action or process of discovering or being discovered",
+    word: "silver",
+    hint: "A precious shiny grayish-white metal",
   },
   {
-    word: "freedom",
-    hint: "The power or right to act, speak, or think as one wants without hindrance or restraint",
+    word: "candy",
+    hint: "A sweet food made with sugar or syrup combined with fruit, chocolate, or nuts",
+  },
+  {
+    word: "music",
+    hint: "The art of arranging sounds in time to produce a composition having unity and continuity",
+  },
+  {
+    word: "sunset",
+    hint: "The time in the evening when the sun disappears or daylight fades",
+  },
+  {
+    word: "winter",
+    hint: "The coldest season of the year",
+  },
+  {
+    word: "laugh",
+    hint: "Make the spontaneous sounds and movements of the face and body that are the instinctive expressions of lively amusement and sometimes also of contempt or derision",
+  },
+  {
+    word: "cloud",
+    hint: "A visible mass of condensed water vapor floating in the atmosphere, typically high above the ground",
+  },
+  {
+    word: "smile",
+    hint: "Form one's features into a pleased, kind, or amused expression, typically with the corners of the mouth turned up and the front teeth exposed",
+  },
+  {
+    word: "peace",
+    hint: "Freedom from disturbance; quiet and tranquility",
+  },
+  {
+    word: "river",
+    hint: "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream",
+  },
+  {
+    word: "beach",
+    hint: "A pebbly or sandy shore, especially by the ocean between high- and low-water marks",
+  },
+  {
+    word: "flower",
+    hint: "The seed-bearing part of a plant, consisting of reproductive organs (stamens and carpels) that are typically surrounded by a brightly colored corolla (petals) and a green calyx (sepals)",
+  },
+  {
+    word: "moon",
+    hint: "The natural satellite of the earth, visible (chiefly at night) by reflected light from the sun",
+  },
+  {
+    word: "star",
+    hint: "A fixed luminous point in the night sky that is a large, remote incandescent body like the sun",
+  },
+  {
+    word: "fruit",
+    hint: "The sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food",
+  },
+  {
+    word: "faith",
+    hint: "Complete trust or confidence in someone or something",
+  },
+  {
+    word: "honey",
+    hint: "A sweet, sticky, yellowish-brown fluid made by bees and other insects from nectar collected from flowers",
+  },
+  {
+    word: "apple",
+    hint: "A round fruit with a red or green skin and a whitish interior",
+  },
+  {
+    word: "chair",
+    hint: "A separate seat for one person, typically with a back and four legs",
+  },
+  {
+    word: "bread",
+    hint: "Food made of flour, water, and yeast or another leavening agent, mixed together and baked",
+  },
+  {
+    word: "glass",
+    hint: "A hard, brittle substance, typically transparent or translucent, made by fusing sand with soda, lime, and sometimes other ingredients and cooling rapidly",
+  },
+  {
+    word: "green",
+    hint: "Of the color between blue and yellow in the spectrum; colored like grass or emeralds",
+  },
+  {
+    word: "heart",
+    hint: "A hollow muscular organ that pumps the blood through the circulatory system by rhythmic contraction and dilation",
+  },
+  {
+    word: "light",
+    hint: "The natural agent that stimulates sight and makes things visible",
+  },
+  {
+    word: "bird",
+    hint: "A warm-blooded egg-laying vertebrate animal distinguished by the possession of feathers, wings, a beak, and typically by being able to fly",
+  },
+  {
+    word: "paper",
+    hint: "A material manufactured in thin sheets from the pulp of wood or other fibrous substances, used for writing, drawing, or printing on, or as wrapping material",
+  },
+  {
+    word: "knife",
+    hint: "An instrument composed of a blade fixed into a handle, used for cutting or as a weapon",
   },
 ];
