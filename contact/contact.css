@@ -1,0 +1,46 @@
+.container h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 50px;
+}
+.info {
+  margin: 10px 40px 50px 40px;
+  font-size: 30px;
+  list-style: none;
+  font-weight: 500;
+}
+.links {
+  margin: 30px 40px 0 40px;
+  font-size: 30px;
+  list-style: none;
+}
+.container h1,
+.info,
+.links a {
+  color: #1a2c5b;
+  font-family: "Fira Sans Condensed", sans-serif;
+  filter: drop-shadow(0px 15px 13px rgba(0, 0, 0, 0.4));
+}
+.links a {
+  width: 100%;
+  text-decoration: none;
+  font-weight: 500;
+}
+.github {
+  padding: 0;
+  margin-left: 30px;
+}
+hr {
+  border: 0;
+  height: 3px;
+  background: #1a2c5b;
+  background-image: linear-gradient(to right, #1a2c5b, #1f45a5, #1a2c5b);
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer-left {
+  margin: 0;
+}
