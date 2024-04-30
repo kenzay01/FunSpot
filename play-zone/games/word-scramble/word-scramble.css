@@ -33,6 +33,7 @@ body {
   text-transform: uppercase;
   color: #1a2c5b;
   margin-bottom: 10px;
+  user-select: none;
 }
 .corOrWrng {
   margin-top: 15px;
@@ -48,6 +49,7 @@ body {
 .hint,
 .time {
   display: none;
+  user-select: none;
 }
 .container input {
   width: 100%;
@@ -62,7 +64,8 @@ body {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
   margin-top: 20px;
 }
 .buttons button {
@@ -70,17 +73,27 @@ body {
   outline: none;
   color: #eeeeee;
   cursor: pointer;
-  padding: 15px 0;
+  padding: 15px 25px;
   font-size: 17px;
-  border-radius: 5px;
-  width: calc(100% / 2 - 8px);
+  border-radius: 7px;
+  transition: all 0.3s ease;
 }
 .buttons .refresh-word {
-  background-color: #6c757d;
+  background-color: #eeeeee;
+  color: #1a2c5b;
+  border: #1a2c5b 3px solid;
 }
 .buttons .check-word {
   background-color: #1a2c5b;
-  pointer-events: none;
+  border: #1a2c5b 3px solid;
+}
+.refresh-word:hover {
+  background-color: #1a2c5b;
+  color: #eeeeee;
+}
+.check-word:hover {
+  background-color: #eeeeee;
+  color: #1a2c5b;
 }
 .lobby a {
   left: 10%;
@@ -123,6 +136,36 @@ body {
   z-index: -1;
   border-radius: 15px;
   filter: blur(125px);
+}
+.alert-container {
+  position: fixed;
+  top: 10vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alert {
+  pointer-events: none;
+  background-color: #e3e3e3;
+  border: #1a2c5b 2px solid;
+  padding: 0.75em;
+  border-radius: 0.25em;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+  margin-bottom: 0.5em;
+}
+.alert:last-child {
+  margin-bottom: 0;
+}
+.alert.hidden {
+  opacity: 0;
+}
+.blurred-text {
+  filter: blur(5px);
+  transition: all 0.3s ease;
 }
 @media (max-width: 782px) {
   body {

@@ -9,8 +9,10 @@ const hint = document.querySelector(".hint");
 const time = document.querySelector(".time");
 const timeInterval = document.querySelector(".time b");
 const cw = document.querySelector(".corOrWrng");
+const alertContainer = document.querySelector(".alert-container");
 let correctWord, timer;
 let cond = true;
+checkBtn.disabled = true;
 
 //Timer
 const initTimer = (maxTime, cond) => {
@@ -35,6 +37,7 @@ const initTimer = (maxTime, cond) => {
 
 //Game
 const initGame = () => {
+  inputWord.focus();
   cond = true;
   initTimer(30, cond);
   wordText.style.display = "block";
@@ -44,7 +47,7 @@ const initGame = () => {
   wordText.style.fontSize = "35px";
   wordText.style.marginRight = "-24px";
   refreshBtn.textContent = "Refresh Word";
-  checkBtn.style.pointerEvents = "auto";
+  checkBtn.disabled = false;
   inputWord.style.pointerEvents = "auto";
   inputWord.placeholder = "Enter the correct word";
   hint.style.display = "block";
@@ -78,10 +81,12 @@ const correctOrWrong = (text, color) => {
 };
 const checkWord = () => {
   cond = false;
-  initTimer(0, cond);
   let userWord = inputWord.value.toLocaleLowerCase();
-  if (userWord == "" || userWord == Number(userWord))
-    return alert("Please enter a word!");
+  if (userWord == "" || userWord == Number(userWord)) {
+    showAlert("Please enter a valid word!");
+    return;
+  }
+  initTimer(0, cond);
   if (userWord !== correctWord) {
     correctOrWrong(`Wrong!`, "red");
     wordText.innerHTML = `<br>Correct word: <b>${correctWord}</b>`;
@@ -91,6 +96,23 @@ const checkWord = () => {
   checkBtn.style.pointerEvents = "none";
   inputWord.style.pointerEvents = "none";
 };
+
+function showAlert(text, duration = 750) {
+  const alert = document.createElement("div");
+  alert.textContent = text;
+  alert.classList.add("alert");
+  alertContainer.prepend(alert);
+  if (duration == null) return;
+  setTimeout(() => {
+    alert.classList.add("hidden");
+    alert.addEventListener("transitionend", () => {
+      alert.remove();
+    });
+  }, duration);
+}
+hint.addEventListener("click", () => {
+  wordHint.classList.toggle("blurred-text");
+});
 
 //Event Listeners
 refreshBtn.addEventListener("click", initGame);
