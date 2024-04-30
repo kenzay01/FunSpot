@@ -93,7 +93,7 @@ const checkWord = () => {
   } else {
     correctOrWrong("Congratulations!", "green");
   }
-  checkBtn.style.pointerEvents = "none";
+  checkBtn.disabled = true;
   inputWord.style.pointerEvents = "none";
 };
 
