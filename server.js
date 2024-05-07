@@ -31,7 +31,7 @@ app.post("/register", async (req, res) => {
       email,
     ]);
     if (checkResult.rows.length > 0) {
-      res.status(400).json({ message: "User already exists" }); /// Change this
+      res.sendFile(__dirname + "/public/errors/errorRegister.html");
     } else {
       const result = await db.query(
         "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *",
@@ -61,10 +61,10 @@ app.post("/login", async (req, res) => {
         res.cookie("userEmail", email);
         res.redirect("/");
       } else {
-        res.status(400).json({ message: "Incorrect password" });
+        res.sendFile(__dirname + "/public/errors/errorLogin.html");
       }
     } else {
-      res.status(404).json({ message: "User not found" });
+      res.sendFile(__dirname + "/public/errors/errorLogin.html");
     }
   } catch (error) {
     res.status(500).json({ message: "Internal server error" });
