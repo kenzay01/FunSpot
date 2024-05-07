@@ -173,6 +173,52 @@ footer > p {
   /* width: 90%; */
   cursor: default;
 }
+.contact {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #eeeeee;
+  transition: 0.2s;
+}
+.contact:hover {
+  color: #eeeeee;
+  text-shadow: 0 0 4px #eeeeee, 0 0 8px #eeeeee, 0 0 12px #eeeeee;
+}
+#logout-section {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 200px;
+  height: 100px;
+  background-color: #1a2c5b;
+  border: #eee 3px solid;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+#logout-section button {
+  background: none;
+  color: #eeeeee;
+  border: none;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+}
 
 @media (max-width: 782px) {
   body {

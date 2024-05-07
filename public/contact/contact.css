@@ -3,6 +3,16 @@
   margin: 40px 0;
   font-size: 50px;
 }
+.nav-bar {
+  justify-content: center;
+  gap: 150px;
+}
+/* .link {
+  padding-left: 20px;
+}
+.logo {
+  padding-left: 50px;
+} */
 .info {
   margin: 10px 40px 50px 40px;
   font-size: 30px;

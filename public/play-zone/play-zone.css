@@ -38,7 +38,7 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  box-shadow: 0 100px 300px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 100px 300px rgba(0, 0, 0, 0.3); */
   margin-top: 75px;
   align-items: center;
   margin-left: 25px;
@@ -79,7 +79,7 @@ body {
 .btn-play-zone:hover {
   background-color: #1a2c5b;
   color: #eeeeee;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 .btn-play-zone:active {
   box-shadow: #1a2c5b 0px 5px 0px 0px;
@@ -140,8 +140,8 @@ body {
 }
 
 .info:hover {
-  transition: all 0.2s ease;
-  box-shadow: 0 0 1000px rgba(255, 255, 255, 0.2);
+  transition: all 0.1s ease;
+  box-shadow: 0 0 75px rgba(255, 255, 255, 0.3);
 }
 .module {
   position: fixed;
@@ -156,7 +156,6 @@ body {
   text-align: center;
   color: #1a2c5b;
   font-family: "Lexend", sans-serif;
-  box-shadow: 0px 0px 1000px 150px rgba(0, 0, 0, 0.5);
 }
 .overlay {
   position: fixed;
