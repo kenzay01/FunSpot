@@ -1,5 +1,4 @@
 const buttonPlay = document.querySelector(".game-btn");
-buttonPlay.href = "#";
 function createLogoutSection() {
   const logoutSection = document.getElementById("logout-section");
 
@@ -45,7 +44,6 @@ if (userEmail) {
   updateLoginText(userEmail);
 }
 function updateLoginText(userEmail) {
-  buttonPlay.href = "./play-zone/play-zone.html";
   const loginLink = document.getElementById("login-link");
   if (loginLink) {
     loginLink.textContent = userEmail;
